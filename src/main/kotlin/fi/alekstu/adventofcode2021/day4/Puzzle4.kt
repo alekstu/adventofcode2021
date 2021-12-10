@@ -1,12 +1,12 @@
 package fi.alekstu.adventofcode2021.day4
 
 @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
-class Puzzle1 {
+class Puzzle4 {
 
     companion object {
         @JvmStatic
         fun main(args : Array<String>) {
-            val input = Puzzle1::class.java.getResource("/day4_1_input.txt").readText()
+            val input = Puzzle4::class.java.getResource("/day4_1_input.txt").readText()
             val numbers = readNumbers(input)
             val boards = splitToBoards(input)
             val bingo = Bingo(boards, numbers)
